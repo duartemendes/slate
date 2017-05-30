@@ -11,10 +11,12 @@ toc_footers:
 includes:
 - introduction
 - gettingStarted
+- example
+- upstreamTypes
+- criteria
 - configuration
 - methods
 - events
-- demos
 - changeLog
 
 search: true

@@ -1,0 +1,11 @@
+# Criteria
+## agent
+## bucket
+## cookie
+## device
+## geoip
+## host
+## path
+## visitor
+## and
+## or
