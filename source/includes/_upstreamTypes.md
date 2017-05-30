@@ -21,25 +21,21 @@
     }
   }
 }
-
 ```
 
-It proxies the traffic to a defined host (non-https).
+It proxies the traffic to a non-certified host.
 
 Host and port must be defined.
 
-<br>
-
 ### Optional configuration
 
-**timeout** - fwefw
+**timeout** - sets the proxy timeout
 
-**headers** - fwefw
+**headers** - adds and overrides existing ones to be sent upstream, meaning that these headers will be sent to the server where the request is being proxied to
 
-**rewrite** - fwefw
+**rewrite** - rewrites the path of the request by providing a regular expression "expression" and a replacement string "to". In the given example the url will be what the user has requested but it will always respond for the "/noticias/" path
 
-**cookies** - fwefw
-
+**cookies** - adds and overrides existing ones to be sent both for upstream and downstream, meaning that these cookies will be sent to the server where the request is being proxied to and it will also be included in the response (potentially overriding a cookie being set by the upstream server)
 
 ## Serve secure
 
@@ -53,14 +49,26 @@ Host and port must be defined.
 }
 ```
 
+It proxies the traffic to a certified host.
+
+Host and port must also be defined.
+
+<br>
+
+**Optional configuration** is extended from the [serve](#serve) type.
+
 ## Redirect
 
 ```javascript
 {
   "type": "redirect",
   "options": {
-    "location": "http://mindera.com/blog",
+    "location": "https://mindera.com/blog",
     "statusCode": 302
   }
 }
 ```
+
+It responds to the original request with a redirect response containing the given location and status code.
+
+In this case, when a request to localhost is made, the user will be redirected to "https://mindera.com/blog".
