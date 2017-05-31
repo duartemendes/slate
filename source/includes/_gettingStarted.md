@@ -1,19 +1,19 @@
 # Getting started
 
-First things first: **!!YET NOT AVAILABLE!!**
+First things first:
 <aside class="notice">npm install traffic-splitter --save</aside>
 
 ```javascript
-const TrafficSplitter = require('traffic-splitter') // yet not available
+const TrafficSplitter = require('traffic-splitter')
 const splitter = new TrafficSplitter(/*your configuration*/)
 splitter.start()
 ```
 
-Then import the package,
+Import the package.
 
-create a splitter instance with your personalized [configuration](#configuration),
+Create an instance with your personalized [configuration](#configuration),
 
-and start it!
+Start it!
 
 <br>
 
