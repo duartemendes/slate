@@ -37,7 +37,7 @@ If no such header is provided the condition wont ever be met.
 
 Bucket selection is one of the most basic forms of traffic splitting. It allows the splitter to send percentages of traffic to different upstreams.
 
-The bucketing system works by issuing a browser bdentifier cookie (name and lifespan [configurable](#browserid)) with random sequence of characters (12 by default). The cookie is only issued once, which the splitter then uses to calculate the bucket (from 0 to 100). Meaning that, once a user was assigned a bucket, it will always be "inside" that bucket (unless cookies are deleted).
+The bucketing system works by issuing a browser identifier cookie (name and lifespan [configurable](#browserid)) with random sequence of characters (12 by default). The cookie is only issued once, which the splitter then uses to calculate the bucket (from 0 to 100). Meaning that, once a user was assigned a bucket, it will always be "inside" that bucket (unless cookies are deleted).
 
 ## cookie
 ```javascript

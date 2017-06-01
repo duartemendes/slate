@@ -11,7 +11,7 @@ splitter.start()
 
 Import the package.
 
-Create an instance with your personalized [configuration](#configuration),
+Create an instance with your personalized [configuration](#configuration) or go [here](#ready-to-go-configuration) for a ready to go configuration.
 
 Start it!
 

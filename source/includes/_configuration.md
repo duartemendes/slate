@@ -51,19 +51,19 @@
 ```javascript
 {
   "headers": [
-      "ORIGIN",
-      "X_REQUESTED_WITH",
-      "X-Requested-with",
-      "Content-Type",
-      "Accept"
+    "ORIGIN",
+    "X_REQUESTED_WITH",
+    "X-Requested-with",
+    "Content-Type",
+    "Accept"
   ],
   "credentials": "true",
   "methods": [
-      "GET",
-      "POST",
-      "DELETE",
-      "OPTIONS",
-      "PUT"
+    "GET",
+    "POST",
+    "DELETE",
+    "OPTIONS",
+    "PUT"
   ],
   "max-age": "600"
 }
