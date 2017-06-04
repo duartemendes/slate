@@ -7,6 +7,13 @@ This repo is the documentation for the [traffic-splitter](https://github.com/Min
 
 Its built on top of the [slate](https://github.com/lord/slate) repo.
 
+<br>
+
+To run:
+> bundle install
+
+> bundle exec middleman server
+
 To build:
 > bundle exec middleman build --clean
 
