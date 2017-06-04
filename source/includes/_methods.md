@@ -19,6 +19,14 @@ if (!TrafficSplitter.isConfigurationValid(myConfig)) {
 
 This method returns a boolean and tells you if your configuration has the necessary objets and properties to start.
 
+## getConfiguration
+
+```javascript
+const optimizedConfiguration = splitter.getConfiguration()
+```
+
+Splitter provides a method that returns the configuration after the optimizations were made.
+
 ## getLogger
 
 ```javascript
@@ -99,7 +107,7 @@ And it also gives you the chance to override any splitter default rule evaluatio
 
 <br>
 
-It takes two parameters. First is the name of your rule (in the configuration) and second is a callback that takes two parameters as well (first will be the rule object and second the current request). This callback must return a boolean. 
+It takes two parameters. First is the name of your rule (in the configuration) and second is a callback that takes two parameters as well (first will be the rule object and second the current request). This callback must return a boolean.
 
 <br>
 

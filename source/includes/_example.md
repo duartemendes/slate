@@ -39,7 +39,7 @@ This upstreams example splits the traffic between mindera.com and npmjs.com, eac
 
 <br>
 
-The object "in" inside the criteria contains all the rules (don't worry, you'll learn all about this in a few moments) that need to be respected in order for that upstream to be selected. The same goes for the "out" object but instead, it eliminates that upstream from being chosen.
+**The object "in" inside the criteria contains all the criteria (don't worry, you'll learn all about this in a few moments) that need to be respected in order for that upstream to be selected. The same goes for the "out" object but instead, it eliminates that upstream from being chosen.**
 
 <br>
 

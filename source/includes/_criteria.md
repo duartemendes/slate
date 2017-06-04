@@ -161,3 +161,10 @@ Note that this particular rule is slightly redundant as the splitter already mat
 By now we bet you already know how this rule works, right? :)
 
 In case you don't, this rule also consists of an array of rules and it will be true if at least one of the rules inside it is true.
+
+## ruleset
+```javascript
+"ruleset": ["myRuleset1", "myRuleset2", "myRuleset3"]
+```
+
+Check [rulesets configuration](#rulesets) to avoid criterias repetition. (this is awesome btw!)
