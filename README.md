@@ -1,6 +1,11 @@
 Traffic Splitter Documentation
 ==
 
-[Traffic Splitter](https://github.com/Mindera/traffic-splitter) is a component that allows for HTTP traffic to be directed to an appropriate upstream depending on the request matching certain criteria.
+This repo is the documentation for the [traffic-splitter](#https://github.com/Mindera/traffic-splitter) component.
 
-To be live at http://trafficsplitter.io
+Its built on top of the [slate](https://github.com/lord/slate) repo.
+
+To build:
+> bundle exec middleman build --clean
+
+Live at http://trafficsplitter.io.
