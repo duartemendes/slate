@@ -2,7 +2,7 @@
 title: Traffic Splitter
 
 language_tabs:
-  - Node.js
+  - node.js
 
 toc_footers:
   - <a target='_blank' href='https://www.mindera.com/'>Mindera</a>

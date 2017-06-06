@@ -15,7 +15,11 @@
     "emitMetricsInterval": {
       "http": 10000,
       "https": 10000
-    }
+    },
+  	"performance": {
+  	  "logSlowRequest": true,
+  	  "slowRequestThreshold": 2500
+  	}
   },
   "bunyan": {
     "name": "traffic-splitter",
@@ -36,8 +40,8 @@
 }
 ```
 
-Use this configuration example as you want.
+Use this configuration sample as you want.
 
 Add some upstreams as seen in [here](#upstreams) to the upstreams array.
 
-After that your splitter is ready to rock and roll!
+After that you're ready to rock and split!
