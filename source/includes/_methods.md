@@ -81,9 +81,7 @@ Inside the callback returned always do "return next()" (or similar) or the reque
   "myCustomRule1": {
     "even": false
   },
-  "host": [
-    "myHost.com"
-  ]
+  "host": ["myHost.com"]
 }
 
 // evaluating custom rule

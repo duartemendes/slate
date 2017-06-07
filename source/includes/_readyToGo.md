@@ -3,7 +3,7 @@
 ```javascript
 {
   "api": {
-    "serverName": "Traffic Splitter",
+    "serverName": "traffic-splitter",
     "port": 80,
     "maxConnections": 1024,
     "upstreamKeepAlive": {
