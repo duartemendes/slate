@@ -1,0 +1,57 @@
+$primary-color: #FFC700;
+$secondary-color: #4B12A1;
+
+$secondary-lightest: lighten($secondary-color, 62%);
+$secondary-lighter: lighten($secondary-color, 56%);
+$secondary-light: lighten($secondary-color, 8%);
+$secondary-dark: darken($secondary-color, 8%);
+$secondary-darker: darken($secondary-color, 16%);
+
+.tocify-wrapper {
+	background-color: $secondary-color;
+
+	> img {
+		height: 14rem;
+		margin: 2.5rem auto 1.5rem
+	}
+
+	> .search input {
+		background: $secondary-color;
+		border-color: $secondary-lighter;
+	}
+
+	.search-results,
+	.tocify-subheader {
+		background: $secondary-dark;
+	}
+
+	.tocify-focus {
+		color: $secondary-color;
+		background-color: $primary-color;
+	}
+}
+
+.page-wrapper {
+	background-color: $secondary-lightest;
+}
+
+.content {
+	aside {
+		background-color: $secondary-lighter;
+	}
+
+	table tr:nth-child(odd) > td {
+		background-color: rgba(white, 0.4)
+	}
+
+	table tr:nth-child(even) > td {
+		background-color: rgba(white, 0.1)
+	}
+}
+
+// Input Placeholders
+
+::-webkit-input-placeholder { color: rgba(white, 0.6); }
+::-moz-placeholder { color: rgba(white, 0.6); } 
+:-ms-input-placeholder { color: rgba(white, 0.6); }
+input:-moz-placeholder { color: rgba(white, 0.6); }
