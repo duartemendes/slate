@@ -131,7 +131,7 @@ If no such header is provided the condition wont ever be met.
 
 Validates against the request path.
 
-For better use of this rule check [pathRegExp](#pathregexp).
+<b>For better use of this rule check [pathRegExp](#pathregexp).</b>
 
 ## visitor
 ```javascript

@@ -138,6 +138,11 @@ This is an optional property.
 
 ## pathRegExp
 ```javascript
+// please remember that this configuration is a global property of the configuration.
+// adding this configuration to an upstream will be simply ignored.
+// in doubts check the configuration sample provided at the end of this page :)
+
+// recommended usage
 {
   "prefix": "^",
   "sufix": "([/?].*)?$"
