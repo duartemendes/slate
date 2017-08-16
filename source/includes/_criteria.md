@@ -167,4 +167,6 @@ In case you don't, this rule also consists of an array of rules and it will be t
 "ruleset": ["myRuleset1", "myRuleset2", "myRuleset3"]
 ```
 
-Check [rulesets configuration](#rulesets) to avoid criterias repetition. (this is awesome btw!)
+Check [rulesets configuration](#rulesets) to improve processing time and to avoid criterias repetition.
+
+(this is pretty awesome btw!)

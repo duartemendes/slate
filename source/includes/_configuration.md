@@ -203,18 +203,26 @@ in: {
 }
 ```
 
-This is one hell of a property! Its very useful to avoid repetition of criterias accross the upstreams.
+<b>This is one hell of a property, our favorite! Let's us explain you why:</b>
 
-Picture yourself having two upstreams with 10 criterias each (for the 'in' part). And in those 10, only one of them is different. Quite boring and repetitive right? Well, just create a ruleset with whatever name you want containing all those 9 equal criteria. And then, back in each upstream delete the criteria that is repeated and add the criteria [ruleset](#ruleset).
+<b>Reason 1</b>: With rulesets you can reduce the time that it takes to calculate the apropriate upstream, awesome, right?!
 
-Just check the example at right.
+And how exactly rulesets reduce the processing time you ask? Well, each ruleset will only be evaluated once per request. In case you don't define rulesets and you still repeat criterias among the many upstreams, those criterias will be evaluated n times per request, unnecessarily.
+
+<br>
+
+<b>Reason 2</b>: Its also very useful to avoid repetition of criterias accross the upstreams.
+
+Picture yourself having two upstreams with 10 criterias each (for the 'in' part). And in those 10, only one of them is different. Quite boring and repetitive right? Well, just create a ruleset with whatever name you want containing all those 9 equal criteria. And then, back in each upstream delete the repeated criteria and add the [ruleset](#ruleset).
+
+<br>
+
+<b>Reason 3</b>: By now you should identify this one... simple... it makes things simpler! Easier to manage and much better looking! Just check the example at right.
 
 <br>
 
 ### Notes:
-* You can have multiple rulesets for each upstream
-
-* If an upstream has a criteria that is also defined in a ruleset used by the same upstream, the one that's taking effect is the one that was last declared
+* You can have multiple rulesets for each upstream, and only one needs to be matched so the 'in' or 'out' condition is met
 
 <br>
 
