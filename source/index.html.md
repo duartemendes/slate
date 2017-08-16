@@ -1,5 +1,5 @@
 ---
-title: Traffic Splitter
+title: traffic-splitter
 
 language_tabs:
   - node.js
