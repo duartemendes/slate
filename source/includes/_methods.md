@@ -110,3 +110,17 @@ It takes two parameters. First is the name of your rule (in the configuration) a
 <br>
 
 Note: missing methods to evaluate custom rules or those who won't return a boolean will be ignored.
+
+## addExecutor
+
+```javascript
+splitter.addExecutor('redirect', (req, res, next, {config, eventEmitter, log, bidCookieDetails, httpAgent, httpsAgent}) => {
+  log.info('my overrided executor :D :D')
+  log.warn('I can literally do anything I want here!')
+  res.redirect(302, 'https://mindera.com', next)
+})
+```
+
+This is just another awesome feature...
+
+Remember the [upstream types](#upstream-types)? Well.. you can add your own! (mind blowing, right?)
