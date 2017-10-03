@@ -72,3 +72,32 @@ Host and port must also be defined.
 It responds to the original request with a redirect response containing the given location and status code.
 
 In this case, when a request to localhost is made, the user will be redirected to "https://mindera.com/blog".
+
+## Serve file
+
+```javascript
+{
+  "type": "serveFile",
+  "options": {
+    "path": "etc",
+    "file": "serve_me.jpg",
+    "download": false,
+    "encoding": ""
+  }
+}
+```
+
+It serves a file, that easy.
+
+### Options
+
+**path** - path of file
+
+**file** - file name and extension
+
+**download** - flag indicating if the file will be showed or downloaded - default is false
+
+**encoding** - indicates the encoding used to read the file when download is set to true (example, set "utf8" when file is txt) - default is empty
+
+<br>
+Only path and file properties are required.
