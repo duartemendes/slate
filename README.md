@@ -1,11 +1,11 @@
-Traffic Splitter Documentation
+traffic-splitter documentation
 ==
 
 This repo is the documentation for the [traffic-splitter](https://github.com/Mindera/traffic-splitter) component.
 
 <br>
 
-Its built on top of the [slate](https://github.com/lord/slate) repo.
+Its built on top of [slate](https://github.com/lord/slate).
 
 <br>
 
@@ -19,4 +19,6 @@ To build:
 
 <br>
 
-Live at http://trafficsplitter.io.
+Live at http://trafficsplitter.io
+
+<img src="http://trafficsplitter.io/images/logos/png/tf-original.png" alt="logo" width="250" height="250" />
