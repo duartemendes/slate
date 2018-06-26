@@ -295,7 +295,7 @@ This is a required property.
 ]
 ```
 
-This property increases the config legibility by reducing your upstreams.
+This property increases the config legibility by simplifying your upstreams.
 
 <br>
 
