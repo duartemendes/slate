@@ -268,3 +268,35 @@ It's this property that contains the array with all the upstreams that you want 
 <br>
 
 This is a required property.
+
+## upstreamsReferences
+```javascript
+"upstreamsReferences": {
+  "mindera": {
+    "type": "serveSecure",
+    "options": {
+      "host": "www.mindera.com",
+      "port": 443,
+      "headers": {
+        "host": "www.mindera.com"
+      }
+    }
+  }
+}
+
+// now, you can do this:
+"upstreams": [
+  {
+    "name": "mindera <3",
+    "enabled": true,
+    "criteria": { /* ... */ },
+    "upstream": "mindera"
+  }
+]
+```
+
+This property increases the config legibility by reducing your upstreams.
+
+<br>
+
+This is an optional property.
