@@ -42,6 +42,6 @@
 
 Use this configuration sample as you want.
 
-Add some upstreams as seen in [here](#upstreams) to the upstreams array.
+Add some upstreams as seen in [here](#upstreams).
 
 After that you're ready to rock and split!

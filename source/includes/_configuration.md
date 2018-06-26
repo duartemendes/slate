@@ -20,7 +20,7 @@ Look at a minimum configuration example in [here](#ready-to-go-configuration).
 
 ## api
 ```javascript
-{
+"api": {
   "serverName": "Traffic Splitter",
   "port": 80,
   "maxConnections": 1024,
@@ -63,7 +63,7 @@ This is a required property.
 
 ## bunyan
 ```javascript
-{
+"bunyan": {
   "name": "traffic-splitter",
   "streams": []
 }
@@ -81,7 +81,7 @@ This is a required property.
 
 ## browserId
 ```javascript
-{
+"browserId": {
   "cookie": "bid",
   "maxAge": 315360000,
   "length": 12
@@ -96,7 +96,7 @@ This is a required property.
 
 ## domains
 ```javascript
-[
+"domains": [
   "www.trafficsplitter.io",
   "www.mindera.com"
 ]
@@ -110,7 +110,7 @@ This is an optional property.
 
 ## cors
 ```javascript
-{
+"CORS": {
   "headers": [
     "ORIGIN",
     "X_REQUESTED_WITH",
@@ -143,7 +143,7 @@ This is an optional property.
 // in doubts check the configuration sample provided at the end of this page :)
 
 // recommended usage
-{
+"pathRegExp": {
   "prefix": "^",
   "sufix": "([/?].*)?$"
 }
@@ -187,7 +187,7 @@ This is an optional property.
 
 ## rulesets
 ```javascript
-{
+"rulesets": {
   "myRuleset1": {
     "cookie": [{ "name": "step", "value": "in" }],
     "path": ["/blog", "/people-and-culture", "/case-studie"],
@@ -196,15 +196,15 @@ This is an optional property.
 }
 
 // inside some upstream
-in: {
-  ruleset: ["myRuleset1"],
-  bucket: [{ "min": 0, "max": 50 }]
+"in": {
+  "ruleset": ["myRuleset1"],
+  "bucket": [{ "min": 0, "max": 50 }]
 }
 
 // inside some other upstream
-in: {
-  ruleset: ["myRuleset1"],
-  bucket: [{ "min": 51, "max": 100 }]
+"in": {
+  "ruleset": ["myRuleset1"],
+  "bucket": [{ "min": 51, "max": 100 }]
 }
 ```
 
@@ -235,7 +235,7 @@ This is an optional property.
 
 ## upstreams
 ```javascript
-[
+"upstreams": [
   {
     "name": "mindera <3",
     "enabled": true,
