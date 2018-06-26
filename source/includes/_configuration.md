@@ -2,7 +2,7 @@
 
 ```javascript
 // load from json file:
-const config = JSON.parse(require('fs').readFileSync('./conf/config.json'))
+const config = require('./conf/config.json')
 
 // or declare it normally
 const config = {
