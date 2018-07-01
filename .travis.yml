@@ -1,11 +1,24 @@
 sudo: false
-
 language: ruby
-
 rvm:
-  - 2.2.5
-  - 2.3.3
-  - 2.4.0
-
+- 2.2.5
+- 2.3.3
+- 2.4.0
 cache: bundler
-script: bundle exec middleman build
+install: bundle install
+script: bundle exec middleman build --clean
+deploy:
+  provider: s3
+  access_key_id:
+    secure: BYeNE1XKN3d3JnoX+K83MwPRUfli+AHgO+KHApTOPbA3lZa5yVGPKVTii1XdN9CkbJGn3x/SSvNbhepqbM2v7LHapFV6dXN/tR+A1kJgn26o7+8uKbk0ilwWVnTFcs82/60kN5nkfXFxywkEoiWyiOQ5G4se7Yn5LSyy/O71MFtrK5Wp2XyhuizTdKq/5g/Qxet+7IkNuuxjyoMTu6vg443palmW63D07HTd23q6nlHPnv1HuT7hOyvO0PBrtWq6kv1OP4hBp8GYpDLD3EkHae/DzCInLwBRLo10w005/eNv8XjCWrAJe+aD9Y8KEzjfnVEbp/pCPoGjILhQNUNl8nVBjJbPYFgbgjBJg/tLlR25bX9yJB/KpzQm+SejmFJGOJTGOcE7hnp6mNN/tE0rrna0/55StAFGD0T+lAe6mdJ9tAWHk9hqlBAwf6D+of+n7gwtHjqLGSMZwk4BketzBL8adOrfQJBfepibp7ZTOAzWUpEsPwdH392NgYe/0vEE9hWgiQwOZt8SSDmQfclxL1NlwxON7Pl0JMDITfZDAw1CjD4cw4NkRrLVG+09nP5GC1DvJVF/1OQK8aqYUt0h08V3tiScroR4mDFPn9cpWQmW5hamQUwQcGPS8eEJOsmlSAQB+JPKGFxjEc0DwK97o39NyBhHjl0XucGPGWc1j6c=
+  secret_access_key:
+    secure: a/Uaz+j2I/E0iRw4mBBqAaAtcRbmIELoRfDNJzq1zLF7nNxjCunk76YN/la1bP6LWMeBi5zLtHsz/3k/K3nFANcVGSNTPmPV73n9ASvtK1k8TgfdVrxSMx3UULpI2AhF3+W/x8sUHQkaF26VPhSs4qPxKCEPYFiI7d4BKAzVM5niLfv3UmBvI+9x7kUUo23SIaCIxf8NVQzqnUVyiei2HNogIT+pApyyxuc9p9/Rf0g4gQxi8bYeTwfpkz+MlVhMScMvXkqCIQgQkdSzKQhtthGU6X67Cqc8P66SvFboHQ7ZcVoF6xdJ+Jjuqw6s1bKFA0C+2FlgqT0mqafJ5xoGnm1hDywnqm2h7ffDIWbXrW/6UWYKRS3BAkwOw+sJcToXxW3QjyzCqSuf728krJdQs7PhsrgEjKd9cehrG2pWQaCkQnVnl8CrC7DxK4hST7p2qR54xbRf1yR5yKIy+zeCVtUG5LlRqNzchNRV8VMeLZVpXgAlaiLbnHfPI+4iYRLTPCGMKD9L37S1+AJIxIi8QqBT4m9LqyZUnJtNeHer+PbaYCw6H9oguz/7SC2e1x29RhCRgRSzXGq976TyYwh9+MtjE4aObJdS5WqPBq5hEWASa6wDX9nQSCpkCOoi7seaiN18v/wDnIQN2UW8aEbagW+O6iypChCeaJJrXy67NXI=
+  bucket: mindera-traffic-splitter
+  skip_cleanup: true
+  local_dir: build
+  acl: public_read
+  region: eu-west-1
+  on:
+    repo: duartemendes/slate
+    branch: master
+    ruby: 2.4.0
