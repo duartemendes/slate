@@ -19,6 +19,6 @@ deploy:
   acl: public_read
   region: eu-west-1
   on:
-    repo: duartemendes/slate
+    repo: duartemendes/traffic-splitter-docs
     branch: master
     ruby: 2.4.0
