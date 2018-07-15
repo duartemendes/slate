@@ -45,3 +45,7 @@ Use this configuration sample as you want.
 Add some upstreams as seen in [here](#upstreams).
 
 After that you're ready to rock and split!
+
+<br><br>
+
+**OR**... go [here](https://github.com/Mindera/traffic-splitter/tree/configuration-samples) for free samples!
