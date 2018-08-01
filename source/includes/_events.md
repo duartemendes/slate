@@ -65,7 +65,7 @@ Triggered every time a response is sent to the final user.
 ## serving
 
 ```javascript
-splitter.events.on('serving', (statusCode, upstream, duration, host) => {
+splitter.events.on('serving', (statusCode, upstream, duration, host, upstreamReq, upstreamRes) => {
   log.info(`${host} took ${duration} milliseconds to respond with ${statusCode} HTTP code`)
 })
 ```
@@ -75,12 +75,32 @@ Called each time an upstream response arrives (only for serve and serveSecure ty
 ## servingError
 
 ```javascript
-splitter.events.on('servingError', (err, upstream, duration) => {
+splitter.events.on('servingError', (err, upstream, duration, upstreamReq) => {
   log.info(`Error while serving upstream '${upstream.name}':`, err)
 })
 ```
 
 Triggered when an upstream responds with an error.
+
+## servingFile
+
+```javascript
+splitter.events.on('servingFile', (upstream, duration) => {
+  log.info(`File read and about to be served for upstream '${upstream.name}'`)
+})
+```
+
+Emitted when a file is read and is about to be served
+
+## servingFileError
+
+```javascript
+splitter.events.on('servingFileError', (err, upstream, duration) => {
+  log.info(`Error reading file for upstream '${upstream.name}':`, err)
+})
+```
+
+Emitted when it fails to read a file
 
 ## upstreamException
 
