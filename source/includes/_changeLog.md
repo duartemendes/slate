@@ -1,5 +1,8 @@
 # Release change log
 
+### 1.2.6 - 01/08/2018
+* [events created and updated](#servingFile) - new events servingFile and servingFileError were created. serving and servingError events now have access to upstream request and response.
+
 ### 1.2.4 - 26/06/2018
 * [referencing upstreams](#upstreamsreferences) - configuration property to increase config legibility.
 
