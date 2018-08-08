@@ -1,5 +1,12 @@
 # Release change log
 
+### 1.2.8 - 08/08/2018
+* [events parameter fixed](#servingFile) - fixed servingFile and servingFileError events upstream parameter.
+* [handle file read fail](#serve-file) - send 500 http status code when it fails to read the file.
+
+### 1.2.7 - 02/08/2018
+* [emitting browserid](#browserid) - emit browserid cookie only when a [bucket](#bucket) criteria is present.
+
 ### 1.2.6 - 01/08/2018
 * [events created and updated](#servingFile) - new events servingFile and servingFileError were created. serving and servingError events now have access to upstream request and response.
 
