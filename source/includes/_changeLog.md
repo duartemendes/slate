@@ -1,7 +1,7 @@
 # Release change log
 
 ### 1.2.8 - 08/08/2018
-* [events parameter fixed](#servingFile) - fixed servingFile and servingFileError events upstream parameter.
+* [events parameter fixed](#servingfile) - fixed servingFile and servingFileError events upstream parameter.
 * [handle file read fail](#serve-file) - send 500 http status code when it fails to read the file.
 
 ### 1.2.7 - 02/08/2018
